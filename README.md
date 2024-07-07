@@ -24,12 +24,22 @@ read data from or to push data to. This should be configurable.
 ```sh
 git clone https://github.com/samadfcibd/XML-file-processor.git
 ```
+
 **Install Dependencies**
+
 Use Composer to install the necessary dependencies.
 N.B. Maybe project repository require permission for composer installing.
+
 ```sh
 composer install
 ```
+
+**Set Up Environment File**
+
+```sh
+cp .env.example .env
+```
+
 
 **Generate Application Key**
 ```sh
@@ -45,12 +55,7 @@ Once you have started the Artisan development server, your application will be a
 
 ## DB Configuration and migration
 
-**Set Up Environment File**
-Copy the example environment file and update the database configuration.
-```sh
-cp .env.example .env
-```
-
+**DB config in .env file**
 We can use mysql, mariadb or sqlite as our preference.
 
 if you wish to use MySQL, update your .env configuration file's DB_* variables like so:
